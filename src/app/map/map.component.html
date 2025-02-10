@@ -1,0 +1,14 @@
+<div class="mapdiv">
+   <svg x="0px" y="0px" width="100%" viewBox="0 0 541 471">
+      
+      @for (district of districts; track district.id) {
+         <a [attr.xlink:title]="district.name" [id]="district.name" (click)="onSelect(district.boundary,district.name)">
+            <path fill="#21F398" [attr.d]="district.d"/>
+         </a>
+      }
+
+   </svg>
+</div>
+
+
+

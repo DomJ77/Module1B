@@ -1,0 +1,43 @@
+:host{
+  color: white;
+  font-size: 400%;
+  margin-top: 5px;
+}
+
+.summary{
+  text-wrap: wrap;
+  font-size: 60%;
+  font-family: "Bebas Neue", sans-serif;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.summary p {
+  margin-top: 0;
+}
+
+.title {
+  font-family: "Protest Strike", sans-serif;
+}
+
+.PLYMOUTH {
+  color: #21F398;
+  font-size: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.CRIMESPOTTING {
+  font-size: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 750px) {
+  :host{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+}
+

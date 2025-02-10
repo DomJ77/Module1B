@@ -1,0 +1,29 @@
+
+:host  {
+    background: #272D35;
+    margin-top: 2%;
+    display: none;
+    margin-right: 5%;
+    max-width: 100px;
+}
+
+img {
+  width: 100%;  
+}
+
+hr{
+  width: 80%;
+}
+
+@media (min-width: 1000px) {
+  :host{
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  :host{
+   margin-right: 10px;
+  }
+}
+ 

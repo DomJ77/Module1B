@@ -1,0 +1,86 @@
+
+.charts {
+  height: 35vh;
+}
+
+.canvas {
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1{
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #21F398; 
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  filter: drop-shadow(0 0 20px#21F398) drop-shadow(0 0 60px #21F398);
+  animation: textEffect 0.5s steps(1) infinite;
+}
+@keyframes textEffect{
+  0%,100%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+}
+.scanning{
+  position: relative;
+  background: url(/assets/image.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}
+.scanning::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: url(/assets/image-cover.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  animation: scanning 3s ease-in-out infinite;
+}
+@keyframes scanning{
+  0%,100%{
+      height: 0%;
+  }
+  50%{
+      height: 100%;
+  }
+}
+.scanning::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #21F398;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 20px #21F398) drop-shadow(0 0 60px #21F398);
+  animation: scanLine 3s ease-in-out infinite;
+}
+@keyframes scanLine{
+  0%,100%{
+      top: 0%;
+  }
+  50%{
+      top: 100%;
+  }
+}

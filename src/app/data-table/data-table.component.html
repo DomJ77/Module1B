@@ -1,0 +1,28 @@
+<div>
+    <title>{{chartTitleName}}</title>
+</div>
+<div [hidden]="!isFetching()">
+    <div class="container">
+        <h1>Scanning...</h1>
+        <div class="scanning"></div>
+    </div>
+</div>
+
+<div [hidden]="isFetching()" class="charts"> <!-- Hide when fetching API Data. need to use the hidden attribute as the chart needs to be initialised before chart creation is called, ngIf removes element from DOM and is therefore not initialised-->
+    <canvas  id="crimeChart" >{{ chart1 }}</canvas>
+</div>
+
+<div [hidden]="isFetching()" class="charts">
+    <canvas  id="yearChart" >{{ chart2 }}</canvas>
+</div>
+
+
+
+
+
+
+
+
+
+    
+    

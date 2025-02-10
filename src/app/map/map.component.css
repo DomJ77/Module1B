@@ -1,0 +1,21 @@
+:host{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.mapdiv path {
+  fill:#21F398; 
+  opacity:1.000000;
+   stroke:none;
+  stroke-width: 2px;
+  transition: fill 0.3s;
+ 
+}
+
+.mapdiv :hover{
+  fill: #1bb170;
+}
+
+
+
+
